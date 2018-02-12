@@ -6,7 +6,7 @@ npm install && \
 npm run build
 
 FROM base AS release
-RUN apk add --no-cache mongodb supervisor && \
+RUN apk add --no-cache mongodb supervisor tzdata  && \
 rm /usr/bin/mongoperf && \
 mkdir /etc/supervisord.d
 

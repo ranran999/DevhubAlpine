@@ -2,7 +2,7 @@ FROM node:9.5.0-alpine AS base
 RUN apk add --no-cache git && \
 git clone https://github.com/volpe28v/DevHub && \
 cd DevHub && \
-git checkout 10e46163fd2721fe505bf3988e7af0d42ad9309d && \
+git checkout 82be35ca1766b399a29c4ac7a6f25df12452bc13 && \
 npm install && \
 npm run build
 
